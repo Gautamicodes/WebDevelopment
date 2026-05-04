@@ -13,35 +13,32 @@
 }
 
 body{
-    background: linear-gradient(135deg,#667eea,#764ba2);
-    color:#333;
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
 }
 
 /* HEADER */
 header{
     text-align:center;
-    padding:30px;
-    color:white;
+    padding:40px 20px;
 }
 
 header h1{
     font-size:32px;
-    letter-spacing:1px;
+    margin-bottom:5px;
 }
 
 header p{
     opacity:0.8;
-    margin-top:5px;
 }
 
-/* CONTAINER */
+/* GRID */
 .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
     padding:20px;
 }
 
-/* CARD GRID */
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -50,13 +47,12 @@ header p{
 
 /* CARD */
 .card{
-    background:rgba(255,255,255,0.15);
+    background:rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
     border-radius:15px;
     padding:20px;
-    color:white;
     transition:0.3s;
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
 }
 
 .card:hover{
@@ -76,11 +72,11 @@ header p{
 /* BUTTON */
 .btn{
     display:inline-block;
-    padding:8px 15px;
+    padding:8px 16px;
     background:#00c6ff;
-    color:white;
     border-radius:20px;
     text-decoration:none;
+    color:white;
     font-size:14px;
     transition:0.3s;
 }
@@ -88,36 +84,7 @@ header p{
 .btn:hover{
     background:#0072ff;
 }
-
-/* LIVE VIEW AREA */
-.viewer{
-    margin-top:30px;
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
-}
-
-iframe{
-    width:100%;
-    height:500px;
-    border:none;
-}
-
-.viewer h2{
-    background:#2c3e50;
-    color:white;
-    padding:10px;
-    font-size:18px;
-}
 </style>
-
-<script>
-function openExperiment(path, name){
-    document.getElementById("frame").src = path;
-    document.getElementById("title").innerText = name;
-}
-</script>
 
 </head>
 
@@ -129,71 +96,87 @@ function openExperiment(path, name){
 </header>
 
 <div class="container">
-
 <div class="grid">
 
     <div class="card">
         <h3>Experiment 1</h3>
         <div class="type">HTML Basics</div>
-        <button class="btn" onclick="openExperiment('Experiment1/index.html','Experiment 1')">Open</button>
+        <a class="btn" href="Experiment1/headings.html" target="_blank">Open</a>
     </div>
 
     <div class="card">
         <h3>Experiment 2</h3>
         <div class="type">Static Webpage</div>
-        <button class="btn" onclick="openExperiment('Experiment2/index.html','Experiment 2')">Open</button>
+        <a class="btn" href="Experiment2/basictags.html" target="_blank">Open</a>
     </div>
 
     <div class="card">
         <h3>Experiment 3</h3>
         <div class="type">Formatting</div>
-        <button class="btn" onclick="openExperiment('Experiment3/index.html','Experiment 3')">Open</button>
+        <a class="btn" href="Experiment3/formatting.html" target="_blank">Open</a>
     </div>
 
     <div class="card">
         <h3>Experiment 4</h3>
         <div class="type">Lists</div>
-        <button class="btn" onclick="openExperiment('Experiment4/index.html','Experiment 4')">Open</button>
+        <a class="btn" href="Experiment4/Listtag.html" target="_blank">Open</a>
     </div>
 
     <div class="card">
         <h3>Experiment 5</h3>
         <div class="type">Images</div>
-        <button class="btn" onclick="openExperiment('Experiment5/index.html','Experiment 5')">Open</button>
+        <a class="btn" href="Experiment5/image.html" target="_blank">Open</a>
     </div>
 
     <div class="card">
         <h3>Experiment 6</h3>
         <div class="type">Iframe</div>
-        <button class="btn" onclick="openExperiment('Experiment6/index.html','Experiment 6')">Open</button>
+        <a class="btn" href="Experiment6/iframe.html" target="_blank">Open</a>
     </div>
 
     <div class="card">
         <h3>Experiment 7</h3>
         <div class="type">Links</div>
-        <button class="btn" onclick="openExperiment('Experiment7/index.html','Experiment 7')">Open</button>
+        <a class="btn" href="Experiment7/listtags.html" target="_blank">Open</a>
     </div>
 
     <div class="card">
         <h3>Experiment 8</h3>
         <div class="type">Tables</div>
-        <button class="btn" onclick="openExperiment('Experiment8/index.html','Experiment 8')">Open</button>
+        <a class="btn" href="Experiment8/Table.html" target="_blank">Open</a>
     </div>
 
     <div class="card">
         <h3>Experiment 9</h3>
         <div class="type">Forms</div>
-        <button class="btn" onclick="openExperiment('Experiment9/index.html','Experiment 9')">Open</button>
+        <a class="btn" href="Experiment9/form.html" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 10</h3>
+        <div class="type">Resume</div>
+        <a class="btn" href="Experiment10/index.html" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 11</h3>
+        <div class="type">XML + CSS</div>
+        <a class="btn" href="Experiment11/library.xml" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 12</h3>
+        <div class="type">XML + XSLT</div>
+        <a class="btn" href="Experiment12/bookl-output.html" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 13</h3>
+        <div class="type">XML Transform</div>
+        <a class="btn" href="Experiment13/examoutput.html" target="_blank">Open</a>
     </div>
 
 </div>
-
-<!-- LIVE VIEW -->
-<div class="viewer">
-    <h2 id="title">Click any experiment to preview</h2>
-    <iframe id="frame"></iframe>
-</div>
-
 </div>
 
 </body>
