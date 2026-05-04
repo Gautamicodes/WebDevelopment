@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Web Development Experiments</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color:#333;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:30px;
+    color:white;
+}
+
+header h1{
+    font-size:32px;
+    letter-spacing:1px;
+}
+
+header p{
+    opacity:0.8;
+    margin-top:5px;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+/* CARD GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* CARD */
+.card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius:15px;
+    padding:20px;
+    color:white;
+    transition:0.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.03);
+}
+
+.card h3{
+    margin-bottom:5px;
+}
+
+.type{
+    font-size:13px;
+    opacity:0.8;
+    margin-bottom:10px;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    padding:8px 15px;
+    background:#00c6ff;
+    color:white;
+    border-radius:20px;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0072ff;
+}
+
+/* LIVE VIEW AREA */
+.viewer{
+    margin-top:30px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+iframe{
+    width:100%;
+    height:500px;
+    border:none;
+}
+
+.viewer h2{
+    background:#2c3e50;
+    color:white;
+    padding:10px;
+    font-size:18px;
+}
+</style>
+
+<script>
+function openExperiment(path, name){
+    document.getElementById("frame").src = path;
+    document.getElementById("title").innerText = name;
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Web Development Experiments</h1>
+    <p>Name: Gautami Upadhye | Roll No: 99</p>
+</header>
+
+<div class="container">
+
+<div class="grid">
+
+    <div class="card">
+        <h3>Experiment 1</h3>
+        <div class="type">HTML Basics</div>
+        <button class="btn" onclick="openExperiment('Experiment1/index.html','Experiment 1')">Open</button>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 2</h3>
+        <div class="type">Static Webpage</div>
+        <button class="btn" onclick="openExperiment('Experiment2/index.html','Experiment 2')">Open</button>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 3</h3>
+        <div class="type">Formatting</div>
+        <button class="btn" onclick="openExperiment('Experiment3/index.html','Experiment 3')">Open</button>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 4</h3>
+        <div class="type">Lists</div>
+        <button class="btn" onclick="openExperiment('Experiment4/index.html','Experiment 4')">Open</button>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 5</h3>
+        <div class="type">Images</div>
+        <button class="btn" onclick="openExperiment('Experiment5/index.html','Experiment 5')">Open</button>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 6</h3>
+        <div class="type">Iframe</div>
+        <button class="btn" onclick="openExperiment('Experiment6/index.html','Experiment 6')">Open</button>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 7</h3>
+        <div class="type">Links</div>
+        <button class="btn" onclick="openExperiment('Experiment7/index.html','Experiment 7')">Open</button>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 8</h3>
+        <div class="type">Tables</div>
+        <button class="btn" onclick="openExperiment('Experiment8/index.html','Experiment 8')">Open</button>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 9</h3>
+        <div class="type">Forms</div>
+        <button class="btn" onclick="openExperiment('Experiment9/index.html','Experiment 9')">Open</button>
+    </div>
+
+</div>
+
+<!-- LIVE VIEW -->
+<div class="viewer">
+    <h2 id="title">Click any experiment to preview</h2>
+    <iframe id="frame"></iframe>
+</div>
+
+</div>
+
+</body>
+</html>
