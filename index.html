@@ -1,154 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Web Development Experiments</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Web Development Experiments</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ffd6e8, #d6e6ff);
-            margin: 0;
-            padding: 20px;
-            color: #333;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-        h1 {
-            text-align: center;
-            background: #ffffffaa;
-            padding: 15px;
-            border-radius: 12px;
-            color: #444;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        ol {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background: #ffffffcc;
-            border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+}
 
-        li {
-            margin: 10px 0;
-            padding: 8px;
-        }
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
 
-        a {
-            text-decoration: none;
-            color: #4a4a4a;
-            padding: 6px 10px;
-            border-radius: 8px;
-            display: inline-block;
-            transition: 0.3s;
-        }
+header h1 {
+    font-size: 2.5rem;
+}
 
-        /* 🎨 Manual color control */
-        .pink {
-            background: #ffe0f0;
-        }
+.section {
+    padding: 20px;
+}
 
-        .blue {
-            background: #cfe8ff;
-        }
+.section h2 {
+    margin-bottom: 15px;
+    border-left: 5px solid #00c6ff;
+    padding-left: 10px;
+}
 
-        a:hover {
-            background: #ffb6d5;
-            color: white;
-            transform: scale(1.05);
-        }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
 
-        ul {
-            margin-top: 8px;
-        }
-    </style>
+.card {
+    background: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 
+.card:hover {
+    transform: scale(1.05);
+    background: #f0f0f0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.8;
+}
+</style>
 </head>
 
 <body>
 
-    <h1> Web Development Lab Experiments </h1>
+<header>
+    <h1>🚀 My Web Development Experiments</h1>
+    <p>All Experiments (1–13)</p>
+</header>
 
-    <ol>
+<!-- Experiment 1 -->
+<div class="section">
+<h2>Experiment 1</h2>
+<div class="grid">
+<a href="Experiment1/heading.html" class="card">Heading</a>
+<a href="Experiment1/link-img.html" class="card">Link & Image</a>
+<a href="Experiment1/structure.html" class="card">Structure</a>
+</div>
+</div>
 
-        <li><a class="pink" href="Exp1-Web-Technology-Basics.html">Experiment 1 - Web Technology Basics</a></li>
+<!-- Experiment 2 -->
+<div class="section">
+<h2>Experiment 2</h2>
+<div class="grid">
+<a href="Experiment2/basictags.html" class="card">Basic Tags</a>
+</div>
+</div>
 
-        <li><a class="pink" href="Exp2-Static-Webpage.html">Experiment 2 - Static Webpage</a></li>
+<!-- Experiment 3 -->
+<div class="section">
+<h2>Experiment 3</h2>
+<div class="grid">
+<a href="Experiment3/formatting.html" class="card">Formatting</a>
+</div>
+</div>
 
-        <li><a class="blue" href="Exp3-Text-Formatting-tags.html">Experiment 3 - Text Formatting Tags</a></li>
+<!-- Experiment 4 -->
+<div class="section">
+<h2>Experiment 4</h2>
+<div class="grid">
+<a href="Experiment4/listtag.html" class="card">List Tag</a>
+</div>
+</div>
 
-        <li><a class="pink" href="Exp4-List-Tags.html">Experiment 4 - List Tags</a></li>
+<!-- Experiment 5 -->
+<div class="section">
+<h2>Experiment 5</h2>
+<div class="grid">
+<a href="Experiment5/image.html" class="card">Image</a>
+</div>
+</div>
 
-        <li>
-            Experiment 5
-            <ul>
-                <li><a class="blue" href="Exp5-Image-Tags/Exp5-Image-Tags.html">Image Tags</a></li>
-                <li><a class="blue" href="Exp5-Image-Tags/imagemap.html">Image Map</a></li>
-            </ul>
-        </li>
+<!-- Experiment 6 -->
+<div class="section">
+<h2>Experiment 6</h2>
+<div class="grid">
+<a href="Experiment6/index.html" class="card">Experiment 6 Page</a>
+</div>
+</div>
 
-        <li>
-            Experiment 6
-            <ul>
-                <li><a class="pink" href="Exp6-frames/Exp6 frames.html">Frames Page</a></li>
-                <li><a class="blue" href="Exp6-frames/frameset.html">Frameset</a></li>
-            </ul>
-        </li>
+<!-- Experiment 7 -->
+<div class="section">
+<h2>Experiment 7</h2>
+<div class="grid">
+<a href="Experiment7/index.html" class="card">Experiment 7 Page</a>
+</div>
+</div>
 
-        <li><a class="blue" href="Exp7-links.html">Experiment 7 - Links</a></li>
+<!-- Experiment 8 -->
+<div class="section">
+<h2>Experiment 8</h2>
+<div class="grid">
+<a href="Experiment8/index.html" class="card">Experiment 8 Page</a>
+</div>
+</div>
 
-        <li>
-            Experiment 8
-            <ul>
-                <li><a class="pink" href="Exp8-Table/Exp8-Table.html">Table</a></li>
-                <li><a class="blue" href="Exp8-Table/Exp8-timetable.html">Timetable</a></li>
-            </ul>
-        </li>
+<!-- Experiment 9 -->
+<div class="section">
+<h2>Experiment 9</h2>
+<div class="grid">
+<a href="Experiment9/index.html" class="card">Experiment 9 Page</a>
+</div>
+</div>
 
-        <li>
-            Experiment 9
-            <ul>
-                <li><a class="pink" href="Exp9/basic.html">Basic HTML</a></li>
-                <li><a class="blue" href="Exp9/css_version.html">CSS Version</a></li>
-            </ul>
-        </li>
+<!-- Experiment 10 -->
+<div class="section">
+<h2>Experiment 10</h2>
+<div class="grid">
+<a href="Experiment10/externalcss.html" class="card">External CSS</a>
+<a href="Experiment10/inlinecss.html" class="card">Inline CSS</a>
+<a href="Experiment10/internalcss.html" class="card">Internal CSS</a>
+<a href="Experiment10/resume.html" class="card">Resume</a>
+</div>
+</div>
 
-        <li>
-            Experiment 10
-            <ul>
-                <li><a class="blue" href="Exp10/basic.html">Basic HTML</a></li>
-                <li><a class="pink" href="Exp10/css_version.html">CSS Version</a></li>
-            </ul>
-        </li>
+<!-- Experiment 11 -->
+<div class="section">
+<h2>Experiment 11</h2>
+<div class="grid">
+<a href="Experiment11/library.xml" class="card">Library XML</a>
+<a href="Experiment11/style.css" class="card">CSS File</a>
+</div>
+</div>
 
-        <li>
-            Experiment 11
-            <ul>
-                <li><a class="pink" href="Exp11/library.xml">XML File</a></li>
-                <li><a class="blue" href="Exp11/design.css">CSS Design</a></li>
-            </ul>
-        </li>
+<!-- Experiment 12 -->
+<div class="section">
+<h2>Experiment 12</h2>
+<div class="grid">
+<a href="Experiment12/booklib.html" class="card">Book Library</a>
+<a href="Experiment12/bookoutlet.html" class="card">Book Outlet</a>
+<a href="Experiment12/bookstyle.xsl" class="card">XSL Style</a>
+</div>
+</div>
 
-        <li>
-            Experiment 12
-            <ul>
-                <li><a class="blue" href="Exp12/book_library.xml">XML File</a></li>
-                <li><a class="pink" href="Exp12/book_style.xsl">XSL Stylesheet</a></li>
-                <li><a class="blue" href="Exp12/book_output.html">Output</a></li>
-            </ul>
-        </li>
+<!-- Experiment 13 -->
+<div class="section">
+<h2>Experiment 13</h2>
+<div class="grid">
+<a href="Experiment13/exam.xml" class="card">Exam XML</a>
+<a href="Experiment13/exam_style.xsl" class="card">XSL Style</a>
+<a href="Experiment13/examoutput.html" class="card">Output</a>
+</div>
+</div>
 
-        <li>
-            Experiment 13
-            <ul>
-                <li><a class="pink" href="Exp13/exam_records.xml">XML File</a></li>
-                <li><a class="blue" href="Exp13/exam_style.xsl">XSL Stylesheet</a></li>
-                <li><a class="pink" href="Exp13/exam_output.html">Output</a></li>
-            </ul>
-        </li>
-
-    </ol>
+<footer>
+    <p>© 2026 Gautamicodes | GitHub Pages</p>
+</footer>
 
 </body>
 </html>
