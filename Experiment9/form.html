@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #e6f2ff;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            width: 500px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+
+        input[type="submit"], input[type="reset"], input[type="button"] {
+            width: 30%;
+            margin-right: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        input[type="reset"] {
+            background-color: red;
+        }
+
+        input[type="button"] {
+            background-color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h2>Employee Registration Form</h2>
+
+<form>
+
+    <!-- Name -->
+    <label>Full Name:</label>
+    <input type="text" name="name" placeholder="Enter your name" required>
+
+    <!-- Email -->
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="Enter email" required>
+
+    <!-- Password -->
+    <label>Password:</label>
+    <input type="password" name="password" minlength="6" required>
+
+    <!-- Phone -->
+    <label>Phone Number:</label>
+    <input type="tel" pattern="[0-9]{10}" placeholder="10 digit number">
+
+    <!-- Date -->
+    <label>Date of Birth:</label>
+    <input type="date">
+
+    <!-- Gender -->
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <br><br>
+
+    <!-- Department -->
+    <label>Department:</label>
+    <select required>
+        <option value="">Select</option>
+        <option>HR</option>
+        <option>IT</option>
+        <option>Finance</option>
+        <option>Marketing</option>
+    </select>
+
+    <!-- Skills -->
+    <label>Skills:</label><br>
+    <input type="checkbox"> Java
+    <input type="checkbox"> Python
+    <input type="checkbox"> HTML
+    <br><br>
+
+    <!-- Experience -->
+    <label>Experience (Years):</label>
+    <input type="number" min="0" max="30">
+
+    <!-- Salary -->
+    <label>Expected Salary:</label>
+    <input type="range" min="10000" max="100000">
+
+    <!-- Upload -->
+    <label>Upload Resume:</label>
+    <input type="file">
+
+    <!-- Address -->
+    <label>Address:</label>
+    <textarea rows="3"></textarea>
+
+    <!-- Buttons -->
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+    <input type="button" value="Click Me">
+
+</form>
+
+</body>
+</html>

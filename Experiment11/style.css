@@ -1,0 +1,40 @@
+library {
+    display: block;
+    font-family: Arial;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+header {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+student {
+    display: block;
+    margin-bottom: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+book {
+    display: block;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+name {
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+
+writer, press, vol, cost {
+    display: block;
+    color: #555;
+}

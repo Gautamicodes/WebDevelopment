@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="exam_style.xsl"?>
+
+<results>
+  <candidate id="101">
+    <name>Riya Sharma</name>
+    <subject>Mathematics</subject>
+    <score>95</score>
+  </candidate>
+
+  <candidate id="103">
+    <name>Aman Patil</name>
+    <subject>Physics</subject>
+    <score>92</score>
+  </candidate>
+
+  <candidate id="105">
+    <name>Neha Kulkarni</name>
+    <subject>Computer</subject>
+    <score>94</score>
+  </candidate>
+</results>
