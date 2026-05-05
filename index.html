@@ -16,54 +16,69 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #141e30, #243b55);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: white;
 }
 
+/* HEADER */
 header {
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
+header p {
+    opacity: 0.8;
+}
+
+/* SECTION */
 .section {
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .section h2 {
-    margin-bottom: 15px;
-    border-left: 5px solid #00c6ff;
+    margin-bottom: 20px;
     padding-left: 10px;
+    border-left: 4px solid #00c6ff;
+    font-weight: 500;
 }
 
+/* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
 }
 
+/* CARD */
 .card {
-    background: white;
-    color: #333;
-    padding: 15px;
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 20px;
     text-decoration: none;
-    transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    color: white;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
 .card:hover {
-    transform: scale(1.05);
-    background: #f0f0f0;
+    transform: translateY(-8px) scale(1.03);
+    background: rgba(255,255,255,0.2);
 }
 
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 20px;
-    opacity: 0.8;
+    padding: 25px;
+    opacity: 0.7;
+    font-size: 0.9rem;
 }
 </style>
 </head>
@@ -75,9 +90,10 @@ footer {
     <p>All Experiments (1–13)</p>
 </header>
 
-<!-- Experiment 1 -->
+<!-- Experiment Sections -->
+
 <div class="section">
-<h2>Experiment 1</h2>
+<h2>📘 Experiment 1</h2>
 <div class="grid">
 <a href="Experiment1/heading.html" class="card">Heading</a>
 <a href="Experiment1/link-img.html" class="card">Link & Image</a>
@@ -85,73 +101,64 @@ footer {
 </div>
 </div>
 
-<!-- Experiment 2 -->
 <div class="section">
-<h2>Experiment 2</h2>
+<h2>📗 Experiment 2</h2>
 <div class="grid">
 <a href="Experiment2/basictags.html" class="card">Basic Tags</a>
 </div>
 </div>
 
-<!-- Experiment 3 -->
 <div class="section">
-<h2>Experiment 3</h2>
+<h2>📙 Experiment 3</h2>
 <div class="grid">
 <a href="Experiment3/formatting.html" class="card">Formatting</a>
 </div>
 </div>
 
-<!-- Experiment 4 -->
 <div class="section">
-<h2>Experiment 4</h2>
+<h2>📕 Experiment 4</h2>
 <div class="grid">
 <a href="Experiment4/listtag.html" class="card">List Tag</a>
 </div>
 </div>
 
-<!-- Experiment 5 -->
 <div class="section">
-<h2>Experiment 5</h2>
+<h2>📓 Experiment 5</h2>
 <div class="grid">
 <a href="Experiment5/image.html" class="card">Image</a>
 </div>
 </div>
 
-<!-- Experiment 6 -->
 <div class="section">
-<h2>Experiment 6</h2>
+<h2>📔 Experiment 6</h2>
 <div class="grid">
-<a href="Experiment6/iframe.html" class="card">Experiment 6 Page</a>
+<a href="Experiment6/iframe.html" class="card">Iframe</a>
 </div>
 </div>
 
-<!-- Experiment 7 -->
 <div class="section">
-<h2>Experiment 7</h2>
+<h2>📒 Experiment 7</h2>
 <div class="grid">
-<a href="Experiment7/listtag.html" class="card">Experiment 7 Page</a>
+<a href="Experiment7/listtag.html" class="card">List Tag</a>
 </div>
 </div>
 
-<!-- Experiment 8 -->
 <div class="section">
-<h2>Experiment 8</h2>
+<h2>📚 Experiment 8</h2>
 <div class="grid">
-<a href="Experiment8/timetables.html" class="card">Experiment 8 Page</a>
+<a href="Experiment8/timetables.html" class="card">Timetable</a>
 </div>
 </div>
 
-<!-- Experiment 9 -->
 <div class="section">
-<h2>Experiment 9</h2>
+<h2>📝 Experiment 9</h2>
 <div class="grid">
-<a href="Experiment9/form.html" class="card">Experiment 9 Page</a>
+<a href="Experiment9/form.html" class="card">Form</a>
 </div>
 </div>
 
-<!-- Experiment 10 -->
 <div class="section">
-<h2>Experiment 10</h2>
+<h2>🎨 Experiment 10</h2>
 <div class="grid">
 <a href="Experiment10/externalcss.html" class="card">External CSS</a>
 <a href="Experiment10/inlinecss.html" class="card">Inline CSS</a>
@@ -160,17 +167,15 @@ footer {
 </div>
 </div>
 
-<!-- Experiment 11 -->
 <div class="section">
-<h2>Experiment 11</h2>
+<h2>📄 Experiment 11</h2>
 <div class="grid">
 <a href="Experiment11/library.xml" class="card">Library XML</a>
 </div>
 </div>
 
-<!-- Experiment 12 -->
 <div class="section">
-<h2>Experiment 12</h2>
+<h2>📖 Experiment 12</h2>
 <div class="grid">
 <a href="Experiment12/booklib.html" class="card">Book Library</a>
 <a href="Experiment12/bookoutlet.html" class="card">Book Outlet</a>
@@ -178,9 +183,8 @@ footer {
 </div>
 </div>
 
-<!-- Experiment 13 -->
 <div class="section">
-<h2>Experiment 13</h2>
+<h2>📊 Experiment 13</h2>
 <div class="grid">
 <a href="Experiment13/exam.xml" class="card">Exam XML</a>
 <a href="Experiment13/exam_style.xsl" class="card">XSL Style</a>
