@@ -1,55 +1,72 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Book Library</title>
+<title>Experiment 12</title>
+
+<style>
+body {
+    font-family: Verdana;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
+
+.exp-box {
+    width: 75%;
+    margin: 20px auto;
+    background: #3f51b5;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto;
+    background: white;
+}
+
+th {
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+</style>
+
 </head>
 
 <body>
 
-<h2 style="text-align:center;">Library Book Details</h2>
-<p style="text-align:center;"><b>Gautami Upadhye | Roll No: 99</b></p>
+<div class="exp-box">
+    <h2>Experiment 12</h2>
+    <p><b>Aim:</b> Display XML data using XSLT</p>
+    <p><b>Gautami Upadhye | Roll No: 99 | Batch S4</b></p>
+</div>
 
-<table border="1" style="margin:auto;">
-  <tr>
+<h2 style="text-align:center;">Library Book Details</h2>
+
+<table border="1">
+<tr>
     <th>Title</th>
     <th>Author</th>
     <th>Year</th>
     <th>Price</th>
-  </tr>
+</tr>
 
-  <tr>
-    <td>Atomic Habits</td>
-    <td>James Clear</td>
-    <td>2018</td>
-    <td>450</td>
-  </tr>
-
-  <tr>
-    <td>The Psychology of Money</td>
-    <td>Morgan Housel</td>
-    <td>2020</td>
-    <td>399</td>
-  </tr>
-
-  <tr>
-    <td>Ikigai</td>
-    <td>Héctor García</td>
-    <td>2016</td>
-    <td>350</td>
-  </tr>
-
-  <tr>
-    <td>Clean Code</td>
-    <td>Robert C. Martin</td>
-    <td>2008</td>
-    <td>600</td>
-  </tr>
-
-  <tr>
-    <td>Introduction to Algorithms</td>
-    <td>Thomas H. Cormen</td>
-    <td>2009</td>
-    <td>800</td>
-  </tr>
+<tr><td>Ikigai</td><td>Héctor García</td><td>2016</td><td>350</td></tr>
+<tr><td>The Psychology of Money</td><td>Morgan Housel</td><td>2020</td><td>399</td></tr>
+<tr><td>Atomic Habits</td><td>James Clear</td><td>2018</td><td>450</td></tr>
+<tr><td>Clean Code</td><td>Robert C. Martin</td><td>2008</td><td>600</td></tr>
+<tr><td>Introduction to Algorithms</td><td>Thomas H. Cormen</td><td>2009</td><td>800</td></tr>
 
 </table>
 

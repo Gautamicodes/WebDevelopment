@@ -1,98 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Employee Registration Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiment 9</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            background-color: #f2f2f2;
-        }
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
 
-        h2 {
-            text-align: center;
-        }
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 
-        form {
-            width: 400px;
-            margin: auto;
-            background-color: white;
-            padding: 20px;
-            border: 1px solid black;
-            border-radius: 10px;
-        }
+.header {
+    text-align: center;
+}
 
-        input, select, textarea {
-            width: 100%;
-            padding: 8px;
-            margin: 5px 0 15px 0;
-        }
+.header h1 {
+    color: #1565c0;
+}
 
-        input[type="submit"], input[type="reset"] {
-            width: 48%;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
+.header h2 {
+    font-size: 18px;
+    color: #555;
+}
 
-        input[type="reset"] {
-            background-color: red;
-        }
+.details {
+    background: #e3f2fd;
+    padding: 10px;
+    border-left: 5px solid #2196f3;
+    margin: 20px 0;
+}
 
-    </style>
+label {
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.inline {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"] {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    width: 48%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="reset"] {
+    background: #f44336;
+    color: white;
+    border: none;
+    width: 48%;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #2e7d32;
+}
+
+input[type="reset"]:hover {
+    background: #c62828;
+}
+</style>
 
 </head>
 
 <body>
 
-<h2>Employee Registration Form</h2>
+<div class="container">
 
-<form>
+    <!-- Header -->
+    <div class="header">
+        <h1>Experiment 9</h1>
+        <h2>Aim: Create a web page to design an Employee Registration Form using HTML form elements</h2>
+    </div>
 
-    <!-- Name -->
-    <label>Full Name:</label>
-    <input type="text" name="name" required>
+    <!-- Student Details -->
+    <div class="details">
+        <p><b>Name:</b> Gautami Upadhye</p>
+        <p><b>Roll No:</b> 99</p>
+        <p><b>Batch:</b> S4</p>
+    </div>
 
-    <!-- Email -->
-    <label>Email:</label>
-    <input type="email" name="email" required>
+    <!-- Form -->
+    <form onsubmit="event.preventDefault(); showMessage();">
 
-    <!-- Password -->
-    <label>Password:</label>
-    <input type="password" name="password">
+        <label>Full Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
 
-    <!-- Gender -->
-    <label>Gender:</label><br>
-    <input type="radio" name="gender"> Male
-    <input type="radio" name="gender"> Female
-    <br><br>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
 
-    <!-- Department -->
-    <label>Department:</label>
-    <select name="department">
-        <option>HR</option>
-        <option>IT</option>
-        <option>Finance</option>
-        <option>Marketing</option>
-    </select>
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Enter password">
 
-    <!-- Skills -->
-    <label>Skills:</label><br>
-    <input type="checkbox"> Java
-    <input type="checkbox"> Python
-    <input type="checkbox"> Web Development
-    <br><br>
+        <label>Gender:</label>
+        <div class="inline">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+        </div>
 
-    <!-- Address -->
-    <label>Address:</label>
-    <textarea rows="3"></textarea>
+        <label>Department:</label>
+        <select name="department">
+            <option>Select Department</option>
+            <option>HR</option>
+            <option>IT</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+        </select>
 
-    <!-- Submit & Reset -->
-    <input type="submit" value="Register">
-    <input type="reset" value="Clear">
+        <label>Skills:</label>
+        <div class="inline">
+            <label><input type="checkbox"> Java</label>
+            <label><input type="checkbox"> Python</label>
+            <label><input type="checkbox"> Web Development</label>
+        </div>
 
-</form>
+        <label>Address:</label>
+        <textarea rows="3" placeholder="Enter address"></textarea>
+
+        <div class="buttons">
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </div>
+
+    </form>
+
+</div>
+
+<!-- JavaScript -->
+<script>
+function showMessage() {
+    alert("Registered Successfully!");
+}
+</script>
 
 </body>
 </html>

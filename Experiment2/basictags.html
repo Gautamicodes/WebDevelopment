@@ -1,64 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Basic HTML Tags</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #0d47a1;
+        }
+
+        .header h2 {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .details {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f1f8ff;
+            border-left: 4px solid #2196f3;
+        }
+
+        .details p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            background: #fafafa;
+            border: 1px solid #ddd;
+        }
+
+        .tag-title {
+            font-weight: bold;
+            color: #1565c0;
+            margin-bottom: 5px;
+        }
+
+        code {
+            background: #eeeeee;
+            padding: 2px 6px;
+            border-radius: 5px;
+        }
+
+        a {
+            color: #1e88e5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            margin-top: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        hr {
+            margin: 15px 0;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Basic HTML Tags Example</h1>
+<div class="container">
 
-    <p>&lt;h1&gt; Heading tag</p>
-    <h1>This is a Heading</h1>
+    <!-- Header -->
+    <div class="header">
+        <h1>Experiment 2</h1>
+        <h2>Aim: Create a web page which defines all text formatting tags</h2>
+    </div>
 
-    <p>&lt;p&gt; Paragraph tag</p>
-    <p>This is a paragraph.</p>
+    <!-- Student Details -->
+    <div class="details">
+        <p>Name: Gautami Upadhye</p>
+        <p>Roll No: 99</p>
+        <p>Batch: S4</p>
+    </div>
 
-    <p>&lt;b&gt; Bold tag</p>
-    <b>This text is bold</b>
+    <!-- Tags Section -->
 
-    <p>&lt;i&gt; Italic tag</p>
-    <i>This text is italic</i>
+    <div class="section">
+        <div class="tag-title">&lt;h1&gt; Heading Tag</div>
+        <h1>This is a Heading</h1>
+    </div>
 
-    <p>&lt;u&gt; Underline tag</p>
-    <u>This text is underlined</u>
+    <div class="section">
+        <div class="tag-title">&lt;p&gt; Paragraph Tag</div>
+        <p>This is a paragraph.</p>
+    </div>
 
-    <p>&lt;br&gt; Line break tag</p>
-    This is line one<br>This is line two
+    <div class="section">
+        <div class="tag-title">&lt;b&gt; Bold Tag</div>
+        <b>This text is bold</b>
+    </div>
 
-    <p>&lt;hr&gt; Horizontal rule tag</p>
-    <hr>
+    <div class="section">
+        <div class="tag-title">&lt;i&gt; Italic Tag</div>
+        <i>This text is italic</i>
+    </div>
 
-    <p>&lt;a&gt; Anchor tag</p>
-    <a href="https://www.google.com">Visit Google</a>
+    <div class="section">
+        <div class="tag-title">&lt;u&gt; Underline Tag</div>
+        <u>This text is underlined</u>
+    </div>
 
-    <p>&lt;img&gt; Image tag</p>
-    <img src="image.jpg" alt="Sample Image" width="150">
+    <div class="section">
+        <div class="tag-title">&lt;br&gt; Line Break</div>
+        This is line one<br>This is line two
+    </div>
 
-    <p>&lt;ul&gt; Unordered list tag</p>
-    <ul>
-        <li>Item One</li>
-        <li>Item Two</li>
-    </ul>
+    <div class="section">
+        <div class="tag-title">&lt;hr&gt; Horizontal Rule</div>
+        <hr>
+    </div>
 
-    <p>&lt;ol&gt; Ordered list tag</p>
-    <ol>
-        <li>First</li>
-        <li>Second</li>
-    </ol>
+    <div class="section">
+        <div class="tag-title">&lt;a&gt; Anchor Tag</div>
+        <a href="https://www.google.com" target="_blank">Visit Google</a>
+    </div>
 
-    <p>&lt;li&gt; List item tag</p>
-    <ul>
-        <li>This is a list item</li>
-    </ul>
+    <div class="section">
+        <div class="tag-title">&lt;img&gt; Image Tag</div>
+        <img src="https://via.placeholder.com/150" alt="Sample Image">
+    </div>
 
-    <p>&lt;div&gt; Division tag</p>
-    <div style="border:1px solid black;">This is a div</div>
+    <div class="section">
+        <div class="tag-title">&lt;ul&gt; Unordered List</div>
+        <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+        </ul>
+    </div>
 
-    <p>&lt;span&gt; Span tag</p>
-    <span style="color:blue;">This is a span</span>
+    <div class="section">
+        <div class="tag-title">&lt;ol&gt; Ordered List</div>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+        </ol>
+    </div>
 
-    <p>&lt;strong&gt; Strong tag</p>
-    <strong>This text is strong</strong>
+    <div class="section">
+        <div class="tag-title">&lt;div&gt; Division Tag</div>
+        <div style="border:1px solid #333; padding:10px;">
+            This is a div container
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="tag-title">&lt;span&gt; Span Tag</div>
+        <span style="color:blue;">This is a span</span>
+    </div>
+
+    <div class="section">
+        <div class="tag-title">&lt;strong&gt; Strong Tag</div>
+        <strong>This text is strong</strong>
+    </div>
+
+</div>
 
 </body>
 </html>

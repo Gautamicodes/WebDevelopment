@@ -1,48 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>College Timetable</title>
+<meta charset="UTF-8">
+<title>Experiment 8 - Styled Table</title>
 
-    <style>
-        body {
-            font-family: Arial;
-        }
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
 
-        h2 {
-            text-align: center;
-        }
+h1, h2 {
+    text-align: center;
+}
 
-        table {
-            width: 90%;
-            margin: auto;
-            border-collapse: collapse;
-        }
+.details {
+    width: 80%;
+    margin: auto;
+    background: #e1f5fe;
+    padding: 10px;
+    border-left: 5px solid #0288d1;
+}
 
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
 
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
+th, td {
+    padding: 12px;
+    text-align: center;
+}
 
-        td {
-            background-color: #f2f2f2;
-        }
+th {
+    background: #0288d1;
+    color: white;
+}
 
-        .break {
-            background-color: #ffcccb;
-            font-weight: bold;
-        }
+td {
+    background: #f5f5f5;
+}
 
-    </style>
+tr:hover td {
+    background: #e1f5fe;
+}
+
+.break {
+    background: #ffcccb;
+    font-weight: bold;
+}
+</style>
 
 </head>
 
 <body>
+
+<h1>Experiment 8</h1>
+<h2>Aim: Create a web page to demonstrate HTML tables</h2>
+
+<div class="details">
+    <p><b>Name:</b> Gautami Upadhye</p>
+    <p><b>Roll No:</b> 99</p>
+    <p><b>Batch:</b> S4</p>
+</div>
 
 <h2>College Timetable</h2>
 
@@ -50,15 +71,17 @@
 
 <tr>
     <th>Day / Time</th>
-    <th>9 - 10</th>
-    <th>10 - 11</th>
+    <th>9-10</th>
+    <th>10-11</th>
     <th>Break</th>
-    <th>11:15 - 12:15</th>
-    <th>12:15 - 1:15</th>
+    <th>11:15-12:15</th>
+    <th>12:15-1:15</th>
     <th>Break</th>
-    <th>2 - 3</th>
-    <th>3 - 4</th>
+    <th>2-3</th>
+    <th>3-4</th>
 </tr>
+
+<!-- SAME DATA (kept as you wrote) -->
 
 <tr>
     <th>Monday</th>

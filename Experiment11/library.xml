@@ -2,11 +2,12 @@
 <?xml-stylesheet type="text/css" href="style.css"?>
 
 <library>
-    <header>Geeks Library Collection</header>
+    <header>📚 Geeks Library Collection</header>
 
     <student>
-        <name>Suhana Bagwan</name>
-        <rollno>23</rollno>
+        <name>Gautami Upadhye</name>
+        <rollno>99</rollno>
+        <batch>S4</batch>
     </student>
 
     <book>
@@ -14,15 +15,15 @@
         <writer>Chris Bates</writer>
         <press>Wiley Publications</press>
         <vol>3rd Edition</vol>
-        <cost>300</cost>
+        <cost>₹300</cost>
     </book>
 
     <book>
         <name>Internet &amp; World Wide Web</name>
-        <writer>Ditel</writer>
+        <writer>Deitel</writer>
         <press>Pearson Education</press>
         <vol>3rd Edition</vol>
-        <cost>400</cost>
+        <cost>₹400</cost>
     </book>
 
     <book>
@@ -30,7 +31,7 @@
         <writer>Forouzan</writer>
         <press>McGraw Hill</press>
         <vol>5th Edition</vol>
-        <cost>700</cost>
+        <cost>₹700</cost>
     </book>
 
     <book>
@@ -38,7 +39,7 @@
         <writer>Navathe</writer>
         <press>Oxford Press</press>
         <vol>5th Edition</vol>
-        <cost>600</cost>
+        <cost>₹600</cost>
     </book>
 
     <book>
@@ -46,7 +47,7 @@
         <writer>Subrata Das</writer>
         <press>Oxford Press</press>
         <vol>8th Edition</vol>
-        <cost>300</cost>
+        <cost>₹300</cost>
     </book>
 
 </library>

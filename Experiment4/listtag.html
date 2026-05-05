@@ -2,87 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML List Tags</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 4</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #00695c;
+        }
+
+        .header h2 {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .details {
+            background: #e0f2f1;
+            padding: 10px;
+            border-left: 5px solid #009688;
+            margin-bottom: 20px;
+        }
+
+        .details p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fafafa;
+            border: 1px solid #ddd;
+            transition: transform 0.2s;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        h3 {
+            color: #00796b;
+        }
+
+        ul, ol, dl {
+            margin-left: 20px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .nested {
+            background: #f1f8e9;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- 1. Unordered List -->
-    <h2>Unordered List</h2>
-    <ul>
-        <li>Apple</li>
-        <li>Banana</li>
-        <li>Orange</li>
-    </ul>
+<div class="container">
 
-    <!-- Unordered List with type -->
-    <ul type="circle">
-        <li>Circle</li>
-        <li>Circle</li>
-    </ul>
+    <!-- Header -->
+    <div class="header">
+        <h1>Experiment 4</h1>
+        <h2>Aim: Create a web page to demonstrate different types of HTML lists</h2>
+    </div>
 
-    <ul type="square">
-        <li>Square</li>
-        <li>Square</li>
-    </ul>
+    <!-- Student Details -->
+    <div class="details">
+        <p>Name: Gautami Upadhye</p>
+        <p>Roll No: 99</p>
+        <p>Batch: S4</p>
+    </div>
 
-    <!-- 2. Ordered List -->
-    <h2>Ordered List</h2>
-    <ol>
-        <li>First</li>
-        <li>Second</li>
-        <li>Third</li>
-    </ol>
+    <!-- Unordered List -->
+    <div class="section">
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Orange</li>
+        </ul>
 
-    <!-- Ordered List with type -->
-    <ol type="1">
-        <li>Numbers</li>
-    </ol>
+        <ul type="circle">
+            <li>Circle</li>
+            <li>Circle</li>
+        </ul>
 
-    <ol type="A">
-        <li>Uppercase Letters</li>
-    </ol>
+        <ul type="square">
+            <li>Square</li>
+            <li>Square</li>
+        </ul>
+    </div>
 
-    <ol type="a">
-        <li>Lowercase Letters</li>
-    </ol>
+    <!-- Ordered List -->
+    <div class="section">
+        <h3>Ordered List</h3>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
 
-    <ol type="I">
-        <li>Roman Uppercase</li>
-    </ol>
+        <ol type="A">
+            <li>Uppercase Letters</li>
+        </ol>
 
-    <ol type="i">
-        <li>Roman Lowercase</li>
-    </ol>
+        <ol type="a">
+            <li>Lowercase Letters</li>
+        </ol>
 
-    <!-- Ordered List with start -->
-    <ol type="1" start="5">
-        <li>Starts from 5</li>
-        <li>6</li>
-    </ol>
+        <ol type="I">
+            <li>Roman Uppercase</li>
+        </ol>
 
-    <!-- 3. Description List -->
-    <h2>Description List</h2>
-    <dl>
-        <dt>HTML</dt>
-        <dd>HyperText Markup Language</dd>
+        <ol type="i">
+            <li>Roman Lowercase</li>
+        </ol>
 
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheets</dd>
-    </dl>
+        <ol start="5">
+            <li>Starts from 5</li>
+            <li>6</li>
+        </ol>
+    </div>
 
-    <!-- 4. Nested List -->
-    <h2>Nested List</h2>
-    <ul>
-        <li>Frontend
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ol>
-        </li>
-        <li>Backend</li>
-    </ul>
+    <!-- Description List -->
+    <div class="section">
+        <h3>Description List</h3>
+        <dl>
+            <dt><b>HTML</b></dt>
+            <dd>HyperText Markup Language</dd>
+
+            <dt><b>CSS</b></dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+    </div>
+
+    <!-- Nested List -->
+    <div class="section nested">
+        <h3>Nested List</h3>
+        <ul>
+            <li>Frontend
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+            </li>
+            <li>Backend</li>
+        </ul>
+    </div>
+
+</div>
 
 </body>
 </html>
-

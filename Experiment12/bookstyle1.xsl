@@ -13,15 +13,15 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <style>
 body {
-    font-family: Verdana;
+    font-family: Arial;
     background: linear-gradient(to right, #e3f2fd, #ffffff);
 }
 
 /* EXP BOX */
 .exp-box {
-    width: 75%;
+    width: 80%;
     margin: 20px auto;
-    background: #3f51b5;
+    background: #1565c0;
     color: white;
     padding: 15px;
     border-radius: 10px;
@@ -31,14 +31,14 @@ body {
 /* TABLE */
 table {
     border-collapse: collapse;
-    width: 75%;
+    width: 80%;
     margin: auto;
     background: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 th {
-    background-color: #3f51b5;
+    background: #1565c0;
     color: white;
     padding: 10px;
 }
@@ -49,11 +49,11 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background: #f2f2f2;
 }
 
 tr:hover {
-    background-color: #d1ecff;
+    background: #d1ecff;
 }
 </style>
 
@@ -78,17 +78,19 @@ tr:hover {
 <tr>
     <th>Title</th>
     <th>Author</th>
+    <th>Country</th>
     <th>Year</th>
     <th>Price</th>
 </tr>
 
-<!-- SORTING ADDED -->
+<!-- SORT BY PRICE -->
 <xsl:for-each select="library/book">
     <xsl:sort select="price" data-type="number"/>
 
 <tr>
     <td><xsl:value-of select="title"/></td>
     <td><xsl:value-of select="author"/></td>
+    <td><xsl:value-of select="country"/></td>
     <td><xsl:value-of select="year"/></td>
     <td>₹<xsl:value-of select="price"/></td>
 </tr>

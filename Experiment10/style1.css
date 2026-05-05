@@ -1,22 +1,52 @@
 body {
-    background-color: #f5f5f5;
+    margin: 0;
     font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
 }
 
-.resume {
-    width: 700px;
-    margin: auto;
-    background-color: white;
-    border: 3px solid black;
+/* CENTER PAGE */
+.container {
+    width: 800px;
+    margin: 30px auto;
+}
+
+/* 🔵 EXPERIMENT BOX */
+.exp-box {
+    background: #1565c0;
+    color: white;
     padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.section {
-    border-bottom: 2px solid black;
-    padding: 10px 0;
+/* RESUME CARD */
+.resume {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 5px;
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+/* CONTENT */
+.content {
+    margin-top: 20px;
+}
+
+/* LIST */
+ul {
+    padding-left: 20px;
 }

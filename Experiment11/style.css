@@ -1,40 +1,69 @@
+/* Page Styling */
 library {
     display: block;
-    font-family: Arial;
-    background-color: #f5f5f5;
-    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    padding: 30px;
 }
 
+/* Header */
 header {
     display: block;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
-    color: darkblue;
-    margin-bottom: 10px;
+    color: white;
+    background: #1565c0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+/* Student Info */
 student {
     display: block;
-    margin-bottom: 15px;
-    color: green;
+    background: #e8f5e9;
+    padding: 15px;
+    border-left: 6px solid green;
+    border-radius: 8px;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
+/* Book Card */
 book {
     display: block;
-    border: 1px solid gray;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: white;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 12px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
+/* Hover Effect */
+book:hover {
+    transform: scale(1.02);
+}
+
+/* Book Name */
 name {
     display: block;
+    font-size: 18px;
     font-weight: bold;
-    color: black;
+    color: #0d47a1;
+    margin-bottom: 5px;
 }
 
+/* Other Details */
 writer, press, vol, cost {
     display: block;
     color: #555;
+    margin-left: 10px;
+}
+
+/* Highlight Price */
+cost {
+    color: #d32f2f;
+    font-weight: bold;
 }

@@ -1,41 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>iFrame Example</title>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            height: 100vh;
-        }
-        .menu {
-            width: 30%;
-            background: #f2f2f2;
-            padding: 10px;
-        }
-        .content {
-            width: 70%;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiment 6</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
+
+/* Sidebar Menu */
+.menu {
+    width: 25%;
+    background: #0d47a1;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 15px 0;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #1565c0;
+    transform: translateX(5px);
+}
+
+/* Content Area */
+.content {
+    width: 75%;
+    padding: 20px;
+}
+
+.header {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.details {
+    background: #e3f2fd;
+    padding: 10px;
+    border-left: 5px solid #2196f3;
+    margin-top: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+</style>
+
 </head>
 
 <body>
 
+<!-- Sidebar -->
 <div class="menu">
-    <h2>Menu</h2>
+    <h2>Navigation</h2>
     <ul>
-        <li><a href="page1.html" target="contentFrame">Page 1</a></li>
-        <li><a href="page2.html" target="contentFrame">Page 2</a></li>
+        <li><a href="page1.html" target="contentFrame">📄 Page 1</a></li>
+        <li><a href="page2.html" target="contentFrame">📄 Page 2</a></li>
+        <li><a href="https://www.wikipedia.org" target="contentFrame">🌐 Wikipedia</a></li>
     </ul>
 </div>
 
+<!-- Main Content -->
 <div class="content">
-    <iframe name="contentFrame" src="content.html"></iframe>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Experiment 6</h1>
+        <h3>Aim: Create a web page using iFrame to display content dynamically</h3>
+
+        <div class="details">
+            <p><b>Name:</b> Gautami Upadhye</p>
+            <p><b>Roll No:</b> 99</p>
+            <p><b>Batch:</b> S4</p>
+        </div>
+    </div>
+
+    <!-- iFrame -->
+    <iframe name="contentFrame" src="about:blank" title="Content Frame"></iframe>
+
 </div>
 
 </body>

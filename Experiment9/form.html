@@ -1,129 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Employee Registration Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiment 9</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            background-color: #e6f2ff;
-        }
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    margin: 0;
+}
 
-        h2 {
-            text-align: center;
-        }
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 
-        form {
-            width: 500px;
-            margin: auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            border: 2px solid black;
-        }
+.header {
+    text-align: center;
+}
 
-        input, select, textarea {
-            width: 100%;
-            padding: 8px;
-            margin: 5px 0 15px 0;
-        }
+.header h1 {
+    color: #1565c0;
+}
 
-        input[type="radio"], input[type="checkbox"] {
-            width: auto;
-        }
+.header h2 {
+    font-size: 18px;
+    color: #555;
+}
 
-        input[type="submit"], input[type="reset"], input[type="button"] {
-            width: 30%;
-            margin-right: 5px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-        }
+.details {
+    background: #e3f2fd;
+    padding: 10px;
+    border-left: 5px solid #2196f3;
+    margin: 20px 0;
+}
 
-        input[type="reset"] {
-            background-color: red;
-        }
+label {
+    font-weight: 600;
+}
 
-        input[type="button"] {
-            background-color: blue;
-        }
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
 
-    </style>
+.inline {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"] {
+    width: 32%;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+input[type="submit"] {
+    background: #4CAF50;
+}
+
+input[type="reset"] {
+    background: #f44336;
+}
+
+input[type="button"] {
+    background: #2196f3;
+}
+
+input[type="submit"]:hover {
+    background: #2e7d32;
+}
+
+input[type="reset"]:hover {
+    background: #c62828;
+}
+
+input[type="button"]:hover {
+    background: #1565c0;
+}
+</style>
 </head>
 
 <body>
 
-<h2>Employee Registration Form</h2>
+<div class="container">
 
-<form>
+    <!-- Header -->
+    <div class="header">
+        <h1>Experiment 9</h1>
+        <h2>Aim: Create a web page to design an Employee Registration Form using HTML form elements</h2>
+    </div>
 
-    <!-- Name -->
-    <label>Full Name:</label>
-    <input type="text" name="name" placeholder="Enter your name" required>
+    <!-- Student Details -->
+    <div class="details">
+        <p><b>Name:</b> Gautami Upadhye</p>
+        <p><b>Roll No:</b> 99</p>
+        <p><b>Batch:</b> S4</p>
+    </div>
 
-    <!-- Email -->
-    <label>Email:</label>
-    <input type="email" name="email" placeholder="Enter email" required>
+    <!-- Form -->
+    <form onsubmit="event.preventDefault(); showMessage();">
 
-    <!-- Password -->
-    <label>Password:</label>
-    <input type="password" name="password" minlength="6" required>
+        <label>Full Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
 
-    <!-- Phone -->
-    <label>Phone Number:</label>
-    <input type="tel" pattern="[0-9]{10}" placeholder="10 digit number">
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter email" required>
 
-    <!-- Date -->
-    <label>Date of Birth:</label>
-    <input type="date">
+        <label>Password:</label>
+        <input type="password" name="password" minlength="6" required>
 
-    <!-- Gender -->
-    <label>Gender:</label><br>
-    <input type="radio" name="gender" value="male"> Male
-    <input type="radio" name="gender" value="female"> Female
-    <br><br>
+        <label>Phone Number:</label>
+        <input type="tel" pattern="[0-9]{10}" placeholder="10 digit number">
 
-    <!-- Department -->
-    <label>Department:</label>
-    <select required>
-        <option value="">Select</option>
-        <option>HR</option>
-        <option>IT</option>
-        <option>Finance</option>
-        <option>Marketing</option>
-    </select>
+        <label>Date of Birth:</label>
+        <input type="date">
 
-    <!-- Skills -->
-    <label>Skills:</label><br>
-    <input type="checkbox"> Java
-    <input type="checkbox"> Python
-    <input type="checkbox"> HTML
-    <br><br>
+        <label>Gender:</label>
+        <div class="inline">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+        </div>
 
-    <!-- Experience -->
-    <label>Experience (Years):</label>
-    <input type="number" min="0" max="30">
+        <label>Department:</label>
+        <select required>
+            <option value="">Select</option>
+            <option>HR</option>
+            <option>IT</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+        </select>
 
-    <!-- Salary -->
-    <label>Expected Salary:</label>
-    <input type="range" min="10000" max="100000">
+        <label>Skills:</label>
+        <div class="inline">
+            <label><input type="checkbox"> Java</label>
+            <label><input type="checkbox"> Python</label>
+            <label><input type="checkbox"> HTML</label>
+        </div>
 
-    <!-- Upload -->
-    <label>Upload Resume:</label>
-    <input type="file">
+        <label>Experience (Years):</label>
+        <input type="number" min="0" max="30">
 
-    <!-- Address -->
-    <label>Address:</label>
-    <textarea rows="3"></textarea>
+        <!-- ✅ FIXED SALARY -->
+        <label>Expected Salary: ₹ <span id="salaryValue">10000</span></label>
+        <input type="range" min="10000" max="100000" step="1000"
+               value="10000"
+               oninput="updateSalary(this.value)">
 
-    <!-- Buttons -->
-    <input type="submit" value="Register">
-    <input type="reset" value="Clear">
-    <input type="button" value="Click Me">
+        <label>Upload Resume:</label>
+        <input type="file">
 
-</form>
+        <label>Address:</label>
+        <textarea rows="3"></textarea>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+            <input type="button" value="Click Me" onclick="showClick()">
+        </div>
+
+    </form>
+
+</div>
+
+<!-- JavaScript -->
+<script>
+function showMessage() {
+    alert("Registered Successfully!");
+}
+
+function showClick() {
+    alert("Button Clicked!");
+}
+
+function updateSalary(val) {
+    document.getElementById("salaryValue").innerText = val;
+}
+</script>
 
 </body>
 </html>

@@ -1,27 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Text and Image Link Practical</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiment 7</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #ede7f6, #ffffff);
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #5e35b1;
+}
+
+.header h2 {
+    font-size: 18px;
+    color: #555;
+}
+
+.details {
+    background: #ede7f6;
+    padding: 10px;
+    border-left: 5px solid #7e57c2;
+    margin-bottom: 20px;
+}
+
+.details p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Sections */
+.section {
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    transition: transform 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+h3 {
+    color: #4527a0;
+}
+
+/* Text Link */
+.text-link a {
+    font-size: 18px;
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text-link a:hover {
+    text-decoration: underline;
+    color: #0d47a1;
+}
+
+/* Image Link */
+.image-link img {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-link img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.caption {
+    margin-top: 10px;
+    color: #555;
+}
+
+</style>
 </head>
 
 <body>
 
-<h2>Text Link Example</h2>
+<div class="container">
 
-<!-- Text Link to College Website -->
-<a href="https://coek.dypgroup.edu.in/">
-    Visit COEK DY Patil College Website
-</a>
+    <!-- Header -->
+    <div class="header">
+        <h1>Experiment 7</h1>
+        <h2>Aim: Demonstrate the use of text links and image links in HTML</h2>
+    </div>
 
-<br><br>
-<h2>Image Link Example</h2>
+    <!-- Student Details -->
+    <div class="details">
+        <p>Name: Gautami Upadhye</p>
+        <p>Roll No: 99</p>
+        <p>Batch: S4</p>
+    </div>
 
-<!-- Image Link to College Website -->
-<a href="https://coek.dypgroup.edu.in/">
-    <img src="https://via.placeholder.com/200"
-         alt="College Image"
-         width="200"
-         height="150">
-</a>
+    <!-- Text Link Section -->
+    <div class="section text-link">
+        <h3>Text Link Example</h3>
+        <p>Click the link below to visit the college website:</p>
+
+        <a href="https://coek.dypgroup.edu.in/" target="_blank" title="Go to DY Patil College Website">
+            Visit COEK DY Patil College Website
+        </a>
+    </div>
+
+    <!-- Image Link Section -->
+    <div class="section image-link">
+        <h3>Image Link Example</h3>
+        <p>Click the image below to visit the same website:</p>
+
+        <a href="https://coek.dypgroup.edu.in/" target="_blank">
+            <img src="https://via.placeholder.com/200"
+                 alt="College Image"
+                 width="200"
+                 height="150"
+                 title="Click image to visit college website">
+        </a>
+
+        <div class="caption">Clickable Image Link</div>
+    </div>
+
+</div>
+
 </body>
 </html>
